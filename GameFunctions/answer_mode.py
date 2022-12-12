@@ -24,6 +24,7 @@ def answer_mode():
                 else:
                     player_answers_file = open_file("_PlayerAnswers.txt", "a")
                     player_answers_file.write(answer + "\n")
+                    player_answers_file.close()
                     score = solved_puzzles()
                     encouragement = ["Good start", "Well done", "Good job", "Excellent", "Great job",
                                      "Fantastic", "Awesome", "Perfect", "Amazing", "Incredible", "That's it"]
