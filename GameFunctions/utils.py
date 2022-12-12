@@ -56,11 +56,13 @@ def victory_screen():
     if player_has_won():
         player_name = open("_PlayerName.txt", "r").read()
         print(f"You've done them all. You are amazing {player_name}, sincerely. "
-              "You have unlocked the victory screen I made for you. "
+              "You have unlocked the victory screen, I hope you like it. "
               "You can see it with the new command 'victory'.")
         response = input("Would you like to see the victory screen? [y/n] ").strip().lower()
         if response == "y" or response == "yes":
             make_victory_screen()
+        else:
+            print("Alright")
 
 
 def player_has_won():
