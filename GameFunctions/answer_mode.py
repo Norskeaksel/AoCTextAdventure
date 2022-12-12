@@ -27,7 +27,7 @@ def answer_mode():
                     player_answers_file.close()
                     score = solved_puzzles()
                     encouragement = ["Good start", "Well done", "Good job", "Excellent", "Great job",
-                                     "Fantastic", "Awesome", "Perfect", "Amazing", "Incredible", "That's it"]
+                                     "Fantastic", "Awesome", "Perfect", "Incredible", "Magnificent", "That's it"]
                     print(f"{encouragement[score]}, that is correct! The answer to {puzzle} is {answer}!")
 
                 if player_has_won():
