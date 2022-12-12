@@ -1,7 +1,9 @@
 import turtle
+from importlib import reload
 
 
 def make_victory_screen():
+    reload(turtle)
     turtle.bgcolor("black")
     turtle.penup()
     draw_xmas_star(-300, 100)

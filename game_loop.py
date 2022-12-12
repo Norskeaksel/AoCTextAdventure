@@ -12,7 +12,7 @@ from PrintFunctions.print_story import print_story
 from PrintFunctions.print_task import select_task
 
 
-def play_game():
+def game_loop():
     while True:
         player_input = input().lower().strip()
         if player_input == "answer":

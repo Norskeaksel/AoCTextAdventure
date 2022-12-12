@@ -1,6 +1,6 @@
 import sys
 
-from play_game import play_game
+from game_loop import game_loop
 from GameFunctions.start_game import ask_player_to_start_game
 
 player_answer = ask_player_to_start_game()
@@ -10,4 +10,4 @@ if player_answer not in ["y", "yes"]:
 
 print('Excellent! To progress, enter a valid command.\n'
       'Use the "help" command to list the commands you have at your disposal.')
-play_game()
+game_loop()

@@ -22,12 +22,12 @@ def answer_mode():
                 if answer in player_answers:
                     print(f"Yes, you have already found that the answer to {puzzle} is {answer}.")
                 else:
-                    score = solved_puzzles()
-                    encouragement = ["Good start", "keep going", "well done", "good job", "Excellent", "Great job",
-                                     "Fantastic", "Awesome", "Perfect", "Amazing", "That's it"]
-                    print(f"{encouragement[score]}, that is correct! The answer to {puzzle} is {answer}!")
                     player_answers_file = open_file("_PlayerAnswers.txt", "a")
                     player_answers_file.write(answer + "\n")
+                    score = solved_puzzles()
+                    encouragement = ["Good start", "Well done", "Good job", "Excellent", "Great job",
+                                     "Fantastic", "Awesome", "Perfect", "Amazing", "Incredible", "That's it"]
+                    print(f"{encouragement[score]}, that is correct! The answer to {puzzle} is {answer}!")
 
                 if player_has_won():
                     victory_screen()
