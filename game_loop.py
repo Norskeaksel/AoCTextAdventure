@@ -44,8 +44,7 @@ def game_loop():
             if player_has_won():
                 victory_screen()
             else:
-                print(player_input, 'is not a valid command\n'
-                                    'Use the "help" command to list the commands at your disposal')
+                print('Are you from the future or something? You have not won yet...')
 
         else:
             print(player_input, 'is not a valid command\n'
