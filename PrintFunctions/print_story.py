@@ -2,10 +2,10 @@ from GameFunctions.utils import player_has_won
 
 
 def print_story():
-    print("The Nordic synchronous area is facing a severe threat.\n"
+    print("We are facing a severe threat.\n"
           "It appears that someone within our organization clicked on a malicious link.\n"
           "As a result, a computer virus has infiltrated our systems and is trying to encrypt our files.\n"
-          "If it succeeds, our development efforts weeks.\n"
+          "If it succeeds, our development efforts will be set back weeks.\n"
           "However, it seems like the virus creator has laid behind tracks for how to negate the virus.\n"
           "We believe that the 10 answers to 5 selected Advent of Code puzzles can be combined into the key for "
           "decrypting all affected systems.\n"
